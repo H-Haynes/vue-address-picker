@@ -7,7 +7,6 @@
 ## 使用
 
 ```javascript
-    import VueNextAddressPicker from "vue-address-picker"
     <template>
         <vue-next-address-picker  
                 :visible="showPickerRef"
@@ -17,13 +16,26 @@
                 >
         </vue-next-address-picker>
     </template>
-    <script setup>
-        import {ref} from "vue"
-        const showPickerRef = ref(false);
-        const choiceAddress = data=>{
-            const {province,city,area,street} = data.province;
-            console.log(data)
-        }
+    <script>
+        import VueNextAddressPicker from "vue-next-address-picker"
+        import {ref,defineComponent} from "vue"
+        export default defineComponent({
+            components:{
+                VueNextAddressPicker
+            },
+            setup(){
+                const showPickerRef = ref(false);
+                const choiceAddress = data=>{
+                    const {province,city,area,street} = data.province;
+                    console.log(data)
+                }
+                return {
+                    showPickerRef,
+                    choiceAddress
+                }
+            }
+        })
+
     </script>
 ```
 
