@@ -7,15 +7,15 @@
 ## 使用
 
 ```javascript
-    import VueAddressPicker from "vue-address-picker"
+    import VueNextAddressPicker from "vue-address-picker"
     <template>
-        <address-picker  
+        <vue-next-address-picker  
                 :visible="showPickerRef"
                 @choice="choiceAddress"
                 @close="showPickerRef=false"
                 :pickerLevel="4"
                 >
-        </address-picker>
+        </vue-next-address-picker>
     </template>
     <script setup>
         import {ref} from "vue"
@@ -27,12 +27,16 @@
     </script>
 ```
 
+## 效果
+
+![展示效果](./vue-next-address-picker.gif)
+
 ## 属性
 
 | 属性名 | 属性值 | 说明 |
 | :---: | :---: | :---: |
 | `borderColor` | string | 边框颜色,默认`#f1f2f6` |
-| `highlightBg` | string | 高粱背景色，默认`#f40` |
+| `highlightBg` | string | 高亮背景色，默认`#f40` |
 | `width` | string | 宽度，默认`100%` |
 | `height`| string | 高度,默认`300px`|
 | `visible` | boolean | 是否显示组件 |

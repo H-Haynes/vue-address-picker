@@ -1,5 +1,5 @@
 {
-  "name": "vue-address-picker",
+  "name": "vue-next-address-picker",
   "version": "1.0.0",
   "description": "a Vue3.0 four level china address picker",
   "main": "index.js",
@@ -15,7 +15,9 @@
     "address",
     "picker"
   ],
-  "files":["index.js"],
+  "files": [
+    "index.js"
+  ],
   "author": "hehong_yf@163.com",
   "license": "ISC",
   "bugs": {

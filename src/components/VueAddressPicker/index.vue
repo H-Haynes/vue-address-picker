@@ -219,7 +219,7 @@ export default defineComponent({
             border-bottom:1px solid v-bind(borderColor);
             background: v-bind(borderColor);
             text-align:center;
-            height:50px;
+            height:36px;
             li{
                 flex:1;
                 cursor:pointer;
@@ -227,7 +227,7 @@ export default defineComponent({
         }
 
         .address-picker__selector{
-            height:calc(v-bind(height) - 50px);
+            height:calc(v-bind(height) - 36px);
             ol{
                 width:v-bind(width);
                 height:100%;
