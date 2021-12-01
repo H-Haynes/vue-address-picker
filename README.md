@@ -2,7 +2,7 @@
 
 ## 安装
 
-`npm i vue-address-picker`
+`npm i vue-next-address-picker`
 
 ## 使用
 
